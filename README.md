@@ -10,7 +10,7 @@ Elements can be either raw or wrapped images with `width` and `height` attribute
 * No library dependencies.
 * And - oh yeah, it's fast!
 
-[DEMO](//http://rasmusfl0e.github.io/image-grid/)
+[DEMO](http://rasmusfl0e.github.io/image-grid/)
 
 ## Usage
 image-grid will handle the layout of images in a container.
