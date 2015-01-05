@@ -1,5 +1,5 @@
 var style = document.createElement("p").style;
-var prefixes = " -o -ms -moz -webkit".split(" ");
+var prefixes = " -o- -ms- -moz- -webkit-".split(" ");
 
 module.exports = function (property) {
 	var i = 0;
