@@ -3,7 +3,7 @@ image-grid
 
 > Fast minimalist image-grid.
 
-Layout elements with known aspect ratios in a grid as known from [flickr](https://www.flickr.com/explore) or [google image search](https://www.google.dk/search?q=image-grid&tbm=isch).
+Layout elements with known aspect ratios in a grid as seen on [flickr](https://www.flickr.com/explore) or [google image search](https://www.google.dk/search?q=image-grid&tbm=isch).
 Elements can be either raw or wrapped images with `width` and `height` attributes - or wrapper elements with a `data-ratio` attribute.
 
 * _Very_ fast due to using managed stylesheets instead of inline styles.
