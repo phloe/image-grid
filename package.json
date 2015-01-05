@@ -1,0 +1,22 @@
+{
+  "name": "image-grid",
+  "version": "1.0.0",
+  "description": "Fast minimalist image-grid",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rasmusfl0e/image-grid.git"
+  },
+  "keywords": [
+    "image-grid"
+  ],
+  "author": {
+    "name": "rasmusfl0e",
+    "email": "rasmusfl0e@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasmusfl0e/image-grid/issues"
+  },
+  "homepage": "https://github.com/rasmusfl0e/image-grid"
+}
