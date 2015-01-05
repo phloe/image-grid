@@ -1,4 +1,4 @@
-var UglifyJsPlugin = require("webpack/lib/optimize/UglifyJsPlugin");
+//var UglifyJsPlugin = require("webpack/lib/optimize/UglifyJsPlugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
@@ -18,7 +18,7 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new UglifyJsPlugin(),
+		//new UglifyJsPlugin(),
 		new ExtractTextPlugin("[name].css")
 	]
 };

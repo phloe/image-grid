@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title></title>
+		<title>image-grid demo</title>
 		<link href="./dist/index.css" rel="stylesheet" />
 		<style>
 			* {
@@ -32,8 +32,13 @@
 				width: 100%;
 				display: block;
 			}
+			button {
+				background-color: #EEE;
+				border: 0;
+				padding: 5px 10px;
+				border-radius: 3px;
+			}
 			.container {
-			    _max-width: 640px;
 			    background-color: #222;
 			    padding: 1px 0 0 1px;
 			}
@@ -101,54 +106,5 @@
 			</div>
 		</div>
 		<script src="./dist/index.bundle.js"></script>
-		<script>
-			/* setup */
-
-			(function setup (container, num) {
-				var i = 0;
-				while (i < num) {
-					var img = document.createElement("img");
-					var width = 400 + (Math.round(Math.random() * 30) * 10);
-					var height = 400;
-					img.setAttribute("width", width);
-					img.setAttribute("height", height);
-					img.setAttribute("src", "http://lorempixel.com/" + width + "/" + height +"?" + i);
-					container.appendChild(img);
-					//container.appendChild(document.createTextNode(" "));
-					i++;
-				}
-			} (document.querySelector(".container"), 250));
-			
-			/* setup done */
-			
-			var instance;
-			
-			var maxHeight = document.getElementById("maxHeight");
-			var maxHeightValue = document.getElementById("maxHeightValue");
-			maxHeight.oninput = function () {
-				maxHeightValue.innerHTML = this.value;
-				instance.set({maxHeight: this.value});
-			};
-			
-			var margin = document.getElementById("margin");
-			var marginValue = document.getElementById("marginValue");
-			margin.oninput = function () {
-				marginValue.innerHTML = this.value;
-				instance.set({margin: this.value});
-			};
-
-			var destroy = document.getElementById("destroy");
-			destroy.onclick = function () {
-				instance.deactivate();
-			}
-
-			var create = document.getElementById("create");
-			create.onclick = function () {
-				instance.activate();
-			}
-
-			instance = imageGrid(".container", {margin: margin.value, maxHeight: maxHeight.value});
-
-		</script>
 	</body>
 </html>
