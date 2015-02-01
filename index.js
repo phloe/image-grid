@@ -19,7 +19,7 @@ var imageGrid = require("image-grid");
 		//container.appendChild(document.createTextNode(" "));
 		i++;
 	}
-} (document.querySelector(".container"), 250));
+} (document.querySelector(".container"), 50));
 
 /* setup end */
 
